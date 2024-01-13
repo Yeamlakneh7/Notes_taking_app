@@ -2,6 +2,7 @@ let main = document.querySelector(".main");
 let addBtn = document.getElementById("addBtn");
 addBtn.addEventListener("click", addNote);
 
+// a code to add notes 
 function addNote() {
     const note = document.createElement("div");
     note.classList.add("note");
@@ -18,6 +19,7 @@ function addNote() {
     textarea.addEventListener("input", saveNote);
 }
 
+// a code to save the data entered.
 function saveNote() {
     const notes = document.querySelectorAll(".note textarea");
     const data = Array.from(notes).map(written => written.value);
