@@ -1,3 +1,4 @@
+// DOM Manipulation
 let main = document.querySelector(".main");
 let addBtn = document.getElementById("addBtn");
 addBtn.addEventListener("click", addNote);
